@@ -1,0 +1,2 @@
+Essa será a pasta responsável pela regra de negocios da nossa aplicação,
+será o coração da nossa aplicação e será onde ficará as entidades do nosso database

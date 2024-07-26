@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Pagina principal</h1>
+    <div class="div-data">
+        {{#each tasks}}
+            <ul>
+                {{#if (eq this.done false)}}
+                    <li>{{this.name}}</li>
+                {{/if}}
+            </ul>
+        {{/each}}
+    </div>
+</div>

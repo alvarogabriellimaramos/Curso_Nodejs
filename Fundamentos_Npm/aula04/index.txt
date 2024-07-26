@@ -1,0 +1,5 @@
+Executando scripts com o npx: o npx é um útilitario do npm
+
+o que é um útilitario ? Um útilitario é uma ferramenta ou software que facilita automatização e ler mais facilmente scripts binarios ,que são scripts escritos em linguagens compiladas ou de baixo nivel,mas não so se limita a isso,um utilitario pode ser utilizado para varias outras coisas também
+
+o npx pode ser utilizado para a execução de pacotes temporarios,isso signifca que quando a tarefa especifica for completada,o pacote será desinstalado

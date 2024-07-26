@@ -1,0 +1,27 @@
+Instalando pacotes: para instalarmos utilizando o npm,usamos o npm install <nome> ou se quisermos uma abreviação utilizamos npm i <nome> 
+
+substituimos o <nome> pelo nome do pacote 
+
+npm i express
+
+podemos utiliza a flag npm install -save-dev para instalar um pacote na dependencia de desenvolvimento,quando instalamos um pacote na devDependecies,estamos dizendo que esse pacote so é útil em quanto estamos desenvolvendo,mas não é necessario para a nossa aplicação funciona
+
+
+Executado Scripts com o npm 
+
+para executamos scripts com o npm devemos ir na parte de script do package.json e configura
+
+{
+    "scripts": {
+        "start": nodemon server.js
+    }
+}
+para ativamos esse script usamos o npm run start 
+
+Instalando pacote global utilizando npm 
+
+para instalamos um pacote global utilizando o npm usamos a flag -g <nome>
+
+npm i -g express,agora poderemos usa esse pacote de qualquer local da nossa aplicação,já que quando utilizamos a flag -g estamos salvando o pacote não no node modules mais sim no computador
+
+lembrando que não serão todos os pacotes que irão funciona como modulo global,devemos utiliza em alguns caso o npm link <nome>

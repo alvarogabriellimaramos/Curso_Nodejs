@@ -1,0 +1,7 @@
+O npm é o principal gerenciado de pacotes do nodejs,com ele conseguimos instalar modulos,configura projetos e criar scripts
+
+a sigla npm significa: Node Package Manager
+
+Criando um projeto com npm,para criamos um projeto com npm utilizamos o npm init
+
+Depois disso,seremos questionados para algumas configurações inicias do nosso projeto,como nome do projeto,a descrição e etc...Essas informações serão salvas no Package.json

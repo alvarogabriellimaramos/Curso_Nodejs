@@ -1,0 +1,1 @@
+Essa será a pasta responsável por criar a lógica de cada rota,ou seja servira como uma ponte entre o model e a view

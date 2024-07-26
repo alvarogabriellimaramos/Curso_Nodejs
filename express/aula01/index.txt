@@ -1,0 +1,7 @@
+O que é o express? 
+
+O express é um framework para nodejs muito utilizado para crianção de aplicações web
+
+Nele podemos criar rotas,renderizar HTML,conectar a um banco de dados
+
+o express torna a crianção de apps muito mais simplificada,do que com os core Modules

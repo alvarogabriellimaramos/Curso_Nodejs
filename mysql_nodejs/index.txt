@@ -1,0 +1,16 @@
+O que é o XAMPP ? 
+
+O XAMPP é um pacote de software de código aberto,que permite os desenvolvedores criar e gerencias suas aplicações web local,permitido que os devs contruam,teste e depurem sites e aplicativos web sem a necessiade de uma conexão com a internet ou um servidor web
+
+Quando instalmos o xampp,não precisamos mais instalar o mysql,php ou perl,já que todos esse pacotes já vem junto com o xampp
+
+
+Utilizando o mysql no terminal: para algumas situações vamos precisar do MySQL no terminal;
+
+Para isso precisamos adicionar o executável do MySQL as variáveis de ambiente;
+
+Para se conectar no MySQL vamos digitar: mysql -u root
+
+
+INTEGRAÇÃO DO NODEJS COM O MySQL
+para fazer essa integração precisamos instalar um pacote chamado mysql,depois precisamos conectar nosso banco de dados,vamos coloca informações como host,name,password e nome do banco

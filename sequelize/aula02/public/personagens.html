@@ -1,0 +1,78 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form__personagens {
+            display:none;
+        }
+    </style>
+
+    <title>Personagens</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="POST" class="login__form">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" placeholder="nome de usuario" name="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" name="password">
+            </div>
+            <button>Login</button>
+        </form>
+        <form class="form__personagens">
+            <div>
+                <label for="name">Nome do personagem</label>
+                <input type="text" placeholder="nome do personagem" name="name" id="name">
+            </div>
+            <div>
+                <label for="class">Classe do personagem</label>
+                <input type="text" placeholder="classe do personagem" name="Class" id="class">
+            </div>
+            <div>
+                <label for="atributted">atributo do personagem</label>
+                <input type="text" placeholder="Atributo" name="atributted" id="atributted">
+            </div>
+            <button>criar</button>
+        </form>
+    </div>
+    <script>
+        const login__form = document.querySelector('.login__form');
+        console.log(login__form)
+        const form__personagens = document.querySelector('.form__personagens')
+        const name = document.getElementById('name');
+        const Class = document.getElementById('class');
+        const atributted = document.getElementById("atributted")
+        function GetQuery() {
+            const querys = window.location.search;
+            const Email = new URLSearchParams(querys).get('email');
+            const User = new URLSearchParams(querys).get("user")
+            localStorage.user = User;
+            if(Email && User) {
+                login__form.style.display = 'none';
+                form__personagens.style.display = 'block';
+                form__personagens.addEventListener("submit",async event => {
+                    event.preventDefault();
+                    const data = await fetch(`/personagens?user=${User}`,{
+                        headers: {"Content-Type": 'application/json'},
+                        method: 'POST',
+                        body: JSON.stringify({
+                            name: name.value,
+                            class: Class.value,
+                            atributted: atributted.value
+                        })
+                    });
+                    const json = await data.json();
+                    console.log(json);
+                })
+                return;
+            };
+        };
+
+        GetQuery()
+    </script>
+</body>
+</html>

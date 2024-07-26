@@ -1,0 +1,1 @@
+Podemos criar um projeto npm de forma rapida,utilizando o npm init -y,dessa ele irá responde todas as perguntas com as resposta padrão 

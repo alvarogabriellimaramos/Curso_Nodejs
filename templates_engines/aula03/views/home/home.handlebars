@@ -1,0 +1,17 @@
+
+<div>
+    <strong>Pagina principal</strong>
+    <div>
+        <p>Essa é a página home do seu site :D</p>
+    </div>
+    <div>
+        {{#if aproved}} 
+            <p>Seu cadastro foi aprovado</p>
+        {{else}}
+            <p>Seu cadastro não foi aprovado</p>
+        {{/if}}
+    </div>
+    {{#if auth}} 
+        <p>Você está autenticado</p>
+    {{/if}}
+</div>

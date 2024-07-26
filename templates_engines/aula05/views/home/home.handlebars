@@ -1,0 +1,16 @@
+
+<div>
+    <strong>Pagina principal</strong>
+    <div>
+        <p>Essa é a página home do seu site :D</p>
+    </div>
+    <div>
+        <ul>
+            {{#each TaskCompleted}}
+                {{#with this}}
+                    <li>{{name}}</li>
+                {{/with}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
